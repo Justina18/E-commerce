@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.Drop{
+    position: absolute;
+    left: 47%;
+    top: 70px;
+    z-index: 100;
+    width: 150px;
+    background-color: rgb(177, 216, 231);
+    height: 100px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius: 0 0 3px 3px;
+    animation: growDown 350ms ease-in-out forwards;
+    transform-origin: top center;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.Drop p{
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+.Link{
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
