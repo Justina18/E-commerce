@@ -4,6 +4,7 @@ import { ThemeContext } from '../../Api/Context'
 import Slide from '../../Slide/Slide'
 import { useDispatch } from 'react-redux'
 import Loading from '../Loading/Loading'
+import './Body.css'
 
 
 const Body = () => {

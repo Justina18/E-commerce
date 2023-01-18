@@ -7,7 +7,7 @@ export const ThemeProvider=({children})=>{
     const [theme, setTheme] = useState(JSON.parse(localStorage.getItem("theme")));
     const theSetter={
         backgroundColor: theme? "white": "#03254E",
-        color: theme ? "black": "white"
+        color: theme ? "#03254E": "white"
     }
 
     const changeTheme =()=>{

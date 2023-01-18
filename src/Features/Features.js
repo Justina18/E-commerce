@@ -36,6 +36,14 @@ const features = createSlice({
         removeItem: (state, {payload})=>{
             const remove = state.cart.filter((i)=> i.id !== payload.id);
             state.cart = remove;
+            let total = 0;
+            let amount = 0;
+            state.cart.forEach((item) => {
+                amount += item.QTY;
+                total += item.QTY * item.price;
+        });
+        state.amount = amount;
+        state.total = total;
         },
         clearCart: (state)=>{
             state.cart = [];
@@ -47,11 +55,12 @@ const features = createSlice({
             let total = 0;
             state.cart.forEach((item) => {
                 amount += item.QTY;
-                total += item.QTY * item.price;
+                total += (item.QTY * item.price) * 100 ;
             });
             state.amount = amount;
-            state.total = total;
+            state.total = (Math.floor(total))/100;
         }
+    
     },
 });
 

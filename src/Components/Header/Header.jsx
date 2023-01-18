@@ -19,9 +19,9 @@ const Header = () => {
     const [toggle, settoggle] = useState(true);
 
     const handletoggle = () => { settoggle(!toggle) }
-    const FiAlignJustif = (<FiAlignJustify fontSize={25} color="white" onClick={handletoggle} />)
+    const FiAlignJustif = (<FiAlignJustify fontSize={25} color="yellow" onClick={handletoggle} />)
     const FaTime = (<div>
-        <FaTimes fontSize={25} color="white" onClick={handletoggle} />
+        <FaTimes fontSize={25} color="yellow" onClick={handletoggle} />
                   </div>)
 
     const navigate = useNavigate()
@@ -46,7 +46,7 @@ const Header = () => {
         }
     }
     const colorObject ={
-        color:theme? "black": "white",
+        color:theme? "white": "white",
     }
     const activeColorObject ={
         color: "rgb(255, 221, 0)",

@@ -28,21 +28,20 @@ const Slide = () => {
     <div className='slid' style={theSetter}>
 
     <div className='slider'>
-        <h2 className='h2' > Single Item</h2>
         <Slider {...settings}>
 
           <div className='slider-div'>
-            <h4 className='h2' >Get Clothes</h4>
+            <h2 className='h2' >Get Clothes</h2>
           <img src='/Suit.jpg' className='slider-img'/>
           </div>
 
           <div className='slider-div'>
-          <h4 className='h2' >Get Jewelries</h4>
+          <h2 className='h2' >Get Jewelries</h2>
            <img src='ring.jpg' className='slider-img'/>
           </div>
 
           <div className='slider-div'>
-          <h4 className='h2' >Get Computers</h4>
+          <h2 className='h2' >Get Computers</h2>
             <img src='/Laptop.jpg' className='slider-img'/>
           </div>
           

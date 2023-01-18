@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import "./Cart.css";
 import CartItems from "./CartItems.jsx";
 import { useSelector, useDispatch } from 'react-redux';
-import {clearCart} from "../../features/features.js";
+import {clearCart, total} from "../../features/features.js";
 import {ThemeContext} from "../../Api/Context"
 import {RiShoppingCartFill} from "react-icons/ri"
 
@@ -12,6 +12,24 @@ const Cart = () => {
   const cart = useSelector((state) => state.commerce.cart);
   const {theSetter, theme} = useContext(ThemeContext)
   const dispatch = useDispatch()
+  const payment=()=>{
+    const refVal = "my-ref" + Math.random () * 1000;
+    
+      window.Korapay.initialize({
+          key:"pk_test_X3AXhz3wRAETd6TrgfBXdcVwpVwJMq8XifBAakPe",
+          reference: `${refVal}`,
+          amount: totalAmount, 
+          currency: "NGN",
+          customer: {
+            name: "John Doe",
+            email: "john@doe.com"
+          },
+          notification_url: "https://example.com/webhook"
+      });
+
+  
+
+  }
 
 
   return (
@@ -33,7 +51,7 @@ const Cart = () => {
       } 
       </div>
       <div className="Cart-Check">
-      <button >Check Out</button>
+      <button onClick={payment} >Check Out</button>
       </div>
       </div>
     </div>

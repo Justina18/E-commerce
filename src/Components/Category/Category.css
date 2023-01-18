@@ -6,27 +6,22 @@
 .Category{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     color: white;
-    /* height: 100vh; */
+    height: 100vh;
 }
 .Category-Holder{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
-    padding-inline: 10px;
     justify-content: center;
 }
-.Category-Item-Holder{
-    margin-top: 70px;
+/* .Category-Item-Holder{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     justify-content: center;
-    gap: 27px;
-    height: 100%;
-}
+} */
 .hvr-float-shadow{
     width: 250px;
     height: 280px;
