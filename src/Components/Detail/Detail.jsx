@@ -48,9 +48,9 @@ const Detail =()=> {
                 Swal.fire({
                   position: 'top-end',
                   icon: 'success',
-                  title: 'Your item has been added to cart...',
+                  title: 'Your todo has been added to cart...',
                   showConfirmButton: false,
-                  timer: 1300
+                  timer: 1000
                 })}}
                  >ADD TO CART</button>
               </div>
