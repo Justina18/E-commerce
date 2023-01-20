@@ -4,7 +4,7 @@ import axios from 'axios'
 import {useParams} from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import { useDispatch } from 'react-redux'
-import { addToCart, total } from '../../features/features'
+import { addToCart, total } from '../../Features/Features'
 import { ThemeContext } from '../../Api/Context'
 import Swal from 'sweetalert2'
 
