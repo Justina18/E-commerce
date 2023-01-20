@@ -50,7 +50,7 @@ const Detail =()=> {
                   icon: 'success',
                   title: 'Your item has been added to cart...',
                   showConfirmButton: false,
-                  timer: 2000
+                  timer: 1300
                 })}}
                  >ADD TO CART</button>
               </div>
