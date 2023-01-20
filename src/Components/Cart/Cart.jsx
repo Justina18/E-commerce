@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import "./Cart.css";
 import CartItems from "./CartItems.jsx";
 import { useSelector, useDispatch } from 'react-redux';
-import {clearCart, total} from "../../features/features.js";
+import {clearCart, total} from "../../Features/Features";
 import {ThemeContext} from "../../Api/Context"
 import {RiShoppingCartFill} from "react-icons/ri"
 
